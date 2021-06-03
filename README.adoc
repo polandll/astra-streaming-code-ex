@@ -23,4 +23,4 @@ The docs can be generated locally during development, to check work.
 npm run build:local
 ----
 
-Open `build/site/astra` a web browser to view the output.
+Open `build/site/astra-streaming-docs` in a web browser to view the output.
