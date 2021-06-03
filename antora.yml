@@ -1,0 +1,6 @@
+name: astra-streaming-docs
+title: DataStax Astra Streaming Documentation
+version: master
+display_version: 'Latest'
+nav:
+- modules/ROOT/nav.adoc

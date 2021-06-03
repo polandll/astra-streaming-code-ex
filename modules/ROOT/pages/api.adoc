@@ -1,0 +1,12 @@
+= API References
+
+Astra provides APIs to manage both DB and Streaming instances.
+
+== Astra DB and Astra Streaming DevOps APIs
+
+Astra DB and Astra Streaming provide DevOps APIs to manage the lifecycles of your databases and streaming instances:
+
+* link:_attachments/devopsv2.html[DevOps API v2]
+
+[sidebar]
+Astra Streaming is currently in private beta. xref:astream-quick-start.adoc#join-waitlist[Join the Astra Streaming Waitlist].

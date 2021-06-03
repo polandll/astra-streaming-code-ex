@@ -1,0 +1,8 @@
+* xref:index.adoc[DataStax Astra Streaming]
+** xref:astream-faq.adoc[Astra Streaming FAQs]
+* xref:astream-quick-start.adoc[Astra Streaming quick start]
+** xref:astream-java-eg.adoc[Java code examples]
+** xref:astream-python-eg.adoc[Python code examples]
+** xref:astream-golang-eg.adoc[Golang code examples]
+** xref:astream-nodejs-eg.adoc[Node.js code examples]
+* xref:api.adoc[API references]
