@@ -875,7 +875,7 @@ paths:
       - Streaming Operations (Beta)
     post:
       summary: Creates a tenant
-      description: Creates a tenant, the default namespace, a plan policy, and a Pulsar
+      description: Creates a tenant, the default namespace, and a Pulsar
         JWT.</br></br>
         <strong>TIP\:</strong>  You can use the Apache Pulsar <a href="https://pulsar.apache.org/admin-rest-api/?version=2.7.1&apiversion=v2">REST administration interface</a>
         or command line utilities to perform additional CRUD operations.
@@ -1853,10 +1853,6 @@ components:
         clusterName:
           type: string
         jvmVersion:
-          type: string
-        plan:
-          type: string
-        planCode:
           type: string
         pulsarToken:
           type: string
