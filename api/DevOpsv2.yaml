@@ -1880,8 +1880,6 @@ components:
           type: string
         cloudRegion:
           type: string
-        plan:
-          type: string
         tenantName:
           type: string
         userEmail:
