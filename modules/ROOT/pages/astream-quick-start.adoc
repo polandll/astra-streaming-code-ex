@@ -1,9 +1,22 @@
 = Astra Streaming quick start
 
 [sidebar]
-Astra Streaming is currently in private beta. <<Join the Astra Streaming Waitlist>>.
+Astra Streaming is currently in beta. <<Join the Astra Streaming Waitlist>>.
 
-In this quick start, you'll get familiar with Astra Streaming by creating a tenant, as well as a topic. You'll then download and configure the Apache Pulsar command line tools and see how you can interact with your Astra Streaming topics. Finally, you'll take a look at various topic and subscription statistics available in the Astra Streaming console.
+* _Prerequisite_ xref:astream-quick-start.adoc#create-astra-acct[Create an Astra account, if you don't have one already.]
+* xref:astream-quick-start.adoc#create-a-tenant[Create an Astra streaming tenant.]
+* xref:astream-quick-start.adoc#create-a-topic[Create an Astra streaming topic.]
+* xref:astream-quick-start.adoc#download-connect-info[Download Pulsar connection information.]
+* _Optional_ xref:astream-quick-start.adoc#download-pulsar[Download and configure Apache Pulsar command-line (CLI) tools.]
+* _Optional_ xref:astream-quick-start.adoc#se-pulsar-tools[Use the Apache Pulsar CLI tools to produce and consume messages.]
+* _Optional_ xref:astream-quick-start.adoc#review-topic-statistics[Review messaging statistics.]
+
+// In this quick start, you'll get familiar with Astra Streaming by creating a tenant,
+// as well as a topic.
+// You'll then download and configure the Apache Pulsar command line tools and see
+// how you can interact with your Astra Streaming topics.
+// Finally, you'll take a look at various topic and subscription statistics
+// available in the Astra Streaming console.
 
 == Astra Streaming free instance limits
 
@@ -16,51 +29,44 @@ The free instance of Astra Streaming enforces the following limits:
 * Maximum number of namespaces: 2
 * Maximum number of topics: 10
 
-[#join-waitlist]
-== Join the Astra Streaming Waitlist
+[#create-astra-acct]
+== Create an Astra account
 
-Before you can complete this quick start, you'll need to be invited to the Astra Streaming Beta by joining the waitlist. 
+Before you can complete this quick start, you'll need to create an Astra account.
 
-To join the Astra Streaming waitlist:
-
-. Create an Astra account... 
+. Go to https://astra.datastax.com, create an account ...
 +
 image::astream-login.png[Login to Astra Streaming]
 
 . ... and https://astra.datastax.com[login].
-. Click *Join Waiting List*:
+. Click *Create Streaming*:
 +
-image::astream-join-waitlist.png[Join Waiting List]
-
-. Choose your preferred cloud provider, preferred cloud region, your level of streaming familiarity, enter a brief description of your product and click *Join Waitlist*:
-+
-image::astream-waitlist-info.png[Join Waitlist]
-
-You'll be notified when you're selected for the program.
+image::astream-create-streaming.png[Create Streaming]
 
 [#create-a-tenant]
-== Create an Astra Streaming tenant
+== Create an Astra streaming tenant
 
-[IMPORTANT]
-====
-You won't be able to complete this quick start until you're accepted into the Astra Streaming beta.
-====
-
-Astra Streaming is based on Apache Pulsar which uses a concept of Tenants as its top level administrative unit. A tenant has multiple namespaces for logical grouping of different applications. In each namespace you can create multiple topics to send and receive data. Your Astra Streaming account allows you to create a single Pulsar tenant containing a maximum of two namespaces, each themselves containing multiple topics.
+Astra streaming is based on Apache Pulsar which uses a concept of tenant as its
+top level administrative unit.
+A tenant has multiple namespaces for logical grouping of different applications.
+In each namespace you can create multiple topics to send and receive data.
+Your Astra streaming account allows you to create a single Pulsar tenant
+containing a maximum of two namespaces that can each contain multiple topics.
 
 Let's begin by creating a new Astra Streaming tenant:
 
-. Login to Astra and click the *Create Streaming* button.
+. Enter the name for your new streaming tenant and select a provider ...
 +
-image::astream-create-tenant.png[Create Streaming]
+image::astream-create-tenant.png[Create new tenant]
 
-. Enter the name for your new streaming tenant...
-+
-image::astream-new-tenant-name.png[New streaming tenant name]
+. ... and click *Create Tenant*
 
-. ... and click *Create*
-
+Your tenant name must start and end with a lowercase alphabetic character.
+It can only contain lowercase alphabetic characters, and hyphens (kebab-case),
+and *no* numbers.
 When Astra Streaming creates the new streaming tenant, it automatically creates a new namespace called *default*.
+Currently, only one region is available for each provider.
+During the beta period, the billing plan is free.
 
 [#create-a-topic]
 == Create an Astra Streaming topic
@@ -177,7 +183,7 @@ The following `pulsar-admin` sub commands don't work with Astra Streaming, eithe
 * `resource-quotas`
 ====
 
-For more information on `pulsar-admin` see the Apache Pulsar http://pulsar.apache.org/tools/pulsar-admin/2.7.0-SNAPSHOT[documentation]. 
+For more information on `pulsar-admin` see the Apache Pulsar http://pulsar.apache.org/tools/pulsar-admin/2.7.0-SNAPSHOT[documentation].
 
 [#produce-some-messages]
 === Produce some messages for your topic
@@ -353,7 +359,7 @@ You can track the following statistics on this tab:
 
 ==== Storage versus Backlog
 
-The *Backlog* statistic represents messages that are stored in subscriptions for consumers. As messages are consumed and acknowledged by consumers, they are removed from the backlog. When the backlog is 0, then all messages in the subscription have been acknowledged. *Storage*, on the other hand, is the total amount of messages stored in the topic, including messages that are part of subscription backlog as well as messages that are being retained for message replay. 
+The *Backlog* statistic represents messages that are stored in subscriptions for consumers. As messages are consumed and acknowledged by consumers, they are removed from the backlog. When the backlog is 0, then all messages in the subscription have been acknowledged. *Storage*, on the other hand, is the total amount of messages stored in the topic, including messages that are part of subscription backlog as well as messages that are being retained for message replay.
 
 [NOTE]
 ====
