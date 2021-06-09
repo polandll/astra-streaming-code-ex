@@ -1,11 +1,8 @@
 = Astra Streaming FAQs
 
-[sidebar]
-Astra Streaming is currently in private beta. xref:astream-quick-start.adoc#join-waitlist[Join the Astra Streaming Waitlist].
-
 == How do I sign up for the Astra Streaming beta?
 
-For instructions on signing up for the Astra Streaming beta, see xref:astream-quick-start.adoc#join-waitlist[Join the Astra Streaming Waitlist].
+For instructions on signing up for the Astra Streaming beta, see xref:astream-quick-start.adoc#create-astra-acct[Create Astra account].
 
 == How is Astra Streaming priced?
 Astra Streaming offers customers a pay-as-you-go, consumption based pricing model that allows customers to start using Astra Streaming for free with a cost model that scales as they grow.
@@ -35,5 +32,5 @@ And finally Astra Streaming offers a user friendly interface and free tier to sa
 
 == Next
 
-* xref:astream-quick-start.adoc[Astra Streaming quick start]
+* xref:astream-quick-start.adoc[Astra Streaming QuickStart]
 * Browse the xref:api.adoc[Astra API References]

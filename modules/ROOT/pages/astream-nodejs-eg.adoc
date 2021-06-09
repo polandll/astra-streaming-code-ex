@@ -1,13 +1,23 @@
-= Node.js code examples
+= Astra Streaming code examples
 
-[sidebar]
-Astra Streaming is currently in private beta. xref:astream-quick-start.adoc#join-waitlist[Join the Astra Streaming Waitlist].
+Astra Streaming is powered by http://pulsar.apache.org/[Apache Pulsar].
+To connect to your service, use the open-source client APIs provided by the Apache Pulsar project.
 
-Astra Streaming is powered by http://pulsar.apache.org/[Apache Pulsar]. To connect to your service, use the open-source client APIs provided by the Apache Pulsar project.
+Astra Streaming is running Pulsar version 2.6.3. You should use this API version or higher.
 
-The Node.js client APIs are distributed through https://github.com/apache/pulsar-client-node[NPM]. On Linux, we recommend Node version 10+ and npm 6+. You can find document and source code for the Node.js client library https://github.com/apache/pulsar-client-node[here].
+**Choose the language that you would like to use:**
+|===
+| xref:astream-code-examples.adoc[image:java-icon.png[]] | xref:astream-python-eg.adoc[image:python-icon.png[]]|  xref:astream-golang-eg.adoc[image:golang-icon.png[]] | xref:astream-nodejs-eg.adoc[image:node-icon.png[]]
+|===
 
-Astra Streaming is running Pulsar version 2.6.3. You should use this API version or higher. Since the current Node.js client library depends on the C+\+ client library, please install the https://archive.apache.org/dist/pulsar/[C+\+ library version 2.6.3].
+== Node.js
+
+The Node.js client APIs are distributed through https://github.com/apache/pulsar-client-node[NPM].
+On Linux, we recommend Node version 10+ and npm 6+.
+You can find document and source code for the Node.js client library https://github.com/apache/pulsar-client-node[here].
+
+Since the current Node.js client library depends on the C+\+ client library,
+please install the https://archive.apache.org/dist/pulsar/[C+\+ library version 2.6.3].
 
 In the code examples, you'll need to make the following substitutions:
 
@@ -48,7 +58,7 @@ const Pulsar = require('pulsar-client');
   const tokenStr = '<streaming-token>';
   const pulsarUri = '<service-url>';
   const topicName = '<topic-url>';
-  
+
   const trustStore = '/etc/ssl/certs/ca-bundle.crt';
   // Debian Ubuntu:
   // const trustStore = '/etc/ssl/certs/ca-certificates.crt'
@@ -58,7 +68,7 @@ const Pulsar = require('pulsar-client');
   // trust_certs='./ca-certificates.crt'
 
   const auth = new Pulsar.AuthenticationToken({token: tokenStr});
- 
+
   // Create Pulsar Client
   const client = new Pulsar.Client({
     serviceUrl: pulsarUri,
@@ -191,6 +201,5 @@ const Pulsar = require('pulsar-client');
 
 == Next
 
-* xref:astream-quick-start.adoc[Astra Streaming quick start]
+* xref:astream-quick-start.adoc[Astra Streaming QuickStart]
 * Browse the xref:api.adoc[Astra API References]
-

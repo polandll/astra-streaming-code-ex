@@ -1,13 +1,7 @@
-= Java code examples
+== Java
 
-[sidebar]
-Astra Streaming is currently in private beta. xref:astream-quick-start.adoc#join-waitlist[Join the Astra Streaming Waitlist].
-
-Astra Streaming is powered by http://pulsar.apache.org/[Apache Pulsar]. To connect to your service, use the open-source client APIs provided by the Apache Pulsar project.
-
-The Java client APIs are distributed through http://search.maven.org/artifact/org.apache.pulsar/pulsar-client/2.6.3/jar[Maven Central]. They require Java version 8. You can find the Javadocs https://pulsar.apache.org/api/client/[here].
-
-Astra Streaming is running Pulsar version 2.6.3. You should use this API version or higher.
+The Java client APIs are distributed through http://search.maven.org/artifact/org.apache.pulsar/pulsar-client/2.6.3/jar[Maven Central].
+They require Java version 8. You can find the Javadocs https://pulsar.apache.org/api/client/[here].
 
 In the code examples, you'll need to make the following substitutions:
 
@@ -180,7 +174,7 @@ public class simpleReader {
 
             if(msg != null){
                 System.out.printf("Message received: %s%n",  new String(msg.getData()));
-                
+
                 receivedMsg = true;
             }
 
@@ -200,6 +194,5 @@ public class simpleReader {
 
 == Next
 
-* xref:astream-quick-start.adoc[Astra Streaming quick start]
+* xref:astream-quick-start.adoc[Astra Streaming QuickStart]
 * Browse the xref:api.adoc[Astra API References]
-

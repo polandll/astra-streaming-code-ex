@@ -1,0 +1,9 @@
+= Using the DevOps v2 API
+
+how to use the devops to do:
+
+* create a tenant
+* get a list of tenants
+* delete a tenant
+
+* get namespaces and topics for a tenant
