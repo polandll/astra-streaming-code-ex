@@ -9,6 +9,7 @@ Astra Streaming is running Pulsar version 2.6.3. You should use this API version
 **Choose the language that you would like to use:**
 |===
 | xref:astream-code-examples.adoc[image:java-icon.png[]] | xref:astream-python-eg.adoc[image:python-icon.png[]]|  xref:astream-golang-eg.adoc[image:golang-icon.png[]] | xref:astream-nodejs-eg.adoc[image:node-icon.png[]]
+| xref:astream-code-examples.adoc[Java] | xref:astream-python-eg.adoc[Python] | xref:astream-golang-eg.adoc[Golang] | xref:astream-nodejs-eg.adoc[Node.js]
 |===
 
 include::page$astream-java-eg.adoc[]
