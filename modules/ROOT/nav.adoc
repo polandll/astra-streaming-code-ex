@@ -2,4 +2,5 @@
 ** xref:astream-faq.adoc[Astra Streaming FAQs]
 * xref:astream-quick-start.adoc[Astra Streaming QuickStart]
 * xref:astream-code-examples.adoc[Astra Streaming code examples]
+* xref:astream-use-devops.adoc[Use the DevOps v2 API]
 * xref:api.adoc[API references]

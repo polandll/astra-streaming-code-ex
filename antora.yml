@@ -2,5 +2,14 @@ name: astra-streaming-docs
 title: DataStax Astra Streaming Documentation
 version: master
 display_version: 'Latest'
+asciidoc:
+  attributes:
+    base_url: 'https://api.dev.streaming.datastax.com'
+    base_api: '/v2/streaming'
+    bearer_token: '$BEARER_TOKEN'
+    tenant_name: 'testcreate'
+    tenant_name_with_topics: 'llp-test'
+    topic_name: 'blah'
+    cluster_name: 'astradev-aws'
 nav:
 - modules/ROOT/nav.adoc
