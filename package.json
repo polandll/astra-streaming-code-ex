@@ -15,6 +15,7 @@
     "@antora/cli": "^2.3.4",
     "@antora/site-generator-default": "^2.3.4",
     "@openapitools/openapi-generator-cli": "^2.1.23",
+    "antora-site-generator-lunr": "^0.6.1",
     "mobx": "^6.0.4",
     "openapi-generator": "^0.1.39",
     "react": "^16.8.4",
