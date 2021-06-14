@@ -1,6 +1,6 @@
 = Using the DevOps v2 API
 
-how to use the devops to do:
+How to use the DevOps API to do:
 
 * xref:astream-use-devops.adoc#get-pulsar-clusters[Get Pulsar clusters]
 * xref:astream-use-devops.adoc#get-streaming-providers[Get streaming providers]
