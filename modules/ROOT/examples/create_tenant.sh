@@ -5,5 +5,5 @@ curl --location --request POST '{base_url}{base_api}/tenants?topic={topic_name}'
     "cloudProvider": "aws",
     "cloudRegion": "useast2",
     "tenantName": "{tenant_name}",
-    "userEmail": "lorina@datastax.com"
+    "userEmail": "joshua@example.com"
 }'

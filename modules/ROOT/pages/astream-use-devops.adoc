@@ -12,10 +12,10 @@ how to use the devops to do:
 
 
 // tag::set-bearer-token[]
-You need to set the bearer token before running any commands:
-[source,shell]
+You need to set the bearer token with the token you downloaded in the `client.conf` file before running any commands:
+[source,shell,subs="attributes+"]
 ----
-export BEARER_TOKEN=AstraCS:cFbZGeOumxfmwqlQiDGRspUz:4d9175e2623e5017792b6c396ba2b3b48a46b5519cc8c1a5a92af3791e5f23f9
+export BEARER_TOKEN={bearer_token_value}
 ----
 // end::set-bearer-token[]
 
@@ -207,26 +207,26 @@ include::example$result/delete_tenant_hard.result[]
 --
 ====
 
-To delete an existing tenant softly, execute the command:
-[tabs]
-====
-cURL command::
-+
---
-[source,shell,subs="attributes+"]
-----
-include::example$delete_tenant_soft.sh[]
-----
---
-
-Result::
-+
---
-[source,plaintext]
-----
-include::example$result/delete_tenant_soft.result[]
-----
---
-====
+// To delete an existing tenant softly, execute the command:
+// [tabs]
+// ====
+// cURL command::
+// +
+// --
+// [source,shell,subs="attributes+"]
+// ----
+// include::example$delete_tenant_soft.sh[]
+// ----
+// --
+//
+// Result::
+// +
+// --
+// [source,plaintext]
+// ----
+// include::example$result/delete_tenant_soft.result[]
+// ----
+// --
+// ====
 
 // end::delete-a-tenant[]

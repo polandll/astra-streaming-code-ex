@@ -4,16 +4,15 @@
 This QuickStart aims to make you familiar with the following steps:
 
 * _Prerequisite:_ xref:astream-quick-start.adoc#create-astra-acct[Create an Astra account, if you don't have one already.]
-* xref:astream-quick-start.adoc#create-a-tenant[Create an Astra streaming tenant.]
-* xref:astream-quick-start.adoc#create-a-topic[Create an Astra streaming topic.]
+* xref:astream-quick-start.adoc#create-a-tenant[Create an Astra Streaming tenant.]
+* xref:astream-quick-start.adoc#create-a-namespace[Create an Astra streaming namespace.]
+* xref:astream-quick-start.adoc#create-a-topic[Create an Astra Streaming topic.]
 * xref:astream-quick-start.adoc#download-connect-info[Download Pulsar connection information.]
 * _Optional:_ xref:astream-quick-start.adoc#download-pulsar[Download and configure Apache Pulsar command-line (CLI) tools.]
 * _Optional:_ xref:astream-quick-start.adoc#se-pulsar-tools[Use the Apache Pulsar CLI tools to produce and consume messages.]
 * _Optional:_ xref:astream-quick-start.adoc#review-topic-statistics[Review messaging statistics.]
-
-// LLP * Create a ES sink
-// LLP * Namespaces?
-// LLP * Delete tenant in settings?
+* _Optional:_ xref:astream-quick-start.adoc#create-a-sink[Create an Astra Streaming sink.]
+* _Optional:_ xref:astream-quick-start.adoc#deete-a-tenant[Delete an Astra Streaming tenant.]
 
 [#create-astra-acct]
 == Create an Astra account
@@ -50,9 +49,31 @@ image::astream-create-tenant.png[Create new tenant]
 Your tenant name must start and end with a lowercase alphabetic character.
 It can only contain lowercase alphabetic characters, and hyphens (kebab-case),
 and *no* numbers.
-When Astra Streaming creates the new streaming tenant, it automatically creates a new namespace called *default*.
+
 Currently, only one region is available for each provider.
 During the beta period, the billing plan is free.
+
+[#create-a-namespace]
+== Create an Astra Streaming namespace
+
+When Astra Streaming creates the new streaming tenant, it automatically creates a new namespace called *default*.
+However, you can add a namespace:
+
+. Click the *Namespaces* tab...
++
+image::astream-new-namespace.png[New namespace]
+
+. ... and click *Add Namespace*
+
+. Enter a namespace name...
++
+image::astream-name-namespace.png[Name the new namespace]
+
+. ... and click *Save*.
+
+Your namespace name must start and end with a lowercase alphabetic character.
+It can only contain lowercase alphabetic characters, and hyphens (kebab-case),
+and *no* numbers.
 
 [#create-a-topic]
 == Create an Astra Streaming topic
@@ -602,6 +623,46 @@ You can track the following statistics on this tab:
 * *Last Consume Timestamp*: The time of the last consumed message
 * *Connected Since*: The time since the consumer connected
 
+[#create-a-sink]
+== Create an Astra Streaming sink
+
+To create an external Cassandra-enhanced sink for Astra Streaming topics:
+
+. Click the *Sinks* tab...
++
+image::astream-new-sink.png[New sink]
+
+. ... and click *Create Sink*
+
+. First enter the namespace, sink type, and sink name...
++
+image::astream-name-sink1.png[Name the new sink]
+
+. ... then if making a Cassandra-enhanced sink, enter the database name,
+keyspace name, table name, client ID, client secret, and the mapping for the sink:
++
+image::astream-name-sink2-ce.png[Add configuration details for the new CE sink]
+
+. ... or if making an ElasticSearch sink, enter the URL, index name, username,
+and password for the sink:
++
+image::astream-name-sink2-es.png[Add configuration details for the new ES sink]
+
+. ... and click *Create*.
+
+Your sink name and index name must start with a lowercase alphabetic character.
+It can only contain lowercase alphabetic characters, numbers, and hyphens (kebab-case).
+
+[#delete-a-tenant]
+== Delete an Astra Streaming tenant
+
+To delete an Astra Streaming tenant:
+
+. Click the *Settings* tab for the tenant to delete ...
++
+image::astream-delete-tenant.png[Delete tenant]
+
+. ... and click *Delete tenant*
 
 == Next
 

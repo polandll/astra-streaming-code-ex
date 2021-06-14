@@ -30,6 +30,13 @@ The pricing model also makes Astra Streaming accessible to mid market and small/
 
 And finally Astra Streaming offers a user friendly interface and free tier to satisfy the needs of individual developers and technologists who want to learn more about Apache Pulsar and data streaming in general.
 
+== What are tenants, namespaces, topics, and sinks?
+
+*Tenants* are an isolated administrative unit for which an autorization scheme can be set and a set of clusters can be defined.
+Each tenant can have multiple *namespaces*, a logical container for creating and managing a hierarchy of topics.
+A *topic* is a named channel for transmitting messages from producers to consumers.
+A *sink* feeds data from Astra Streaming to an external system, such as Cassandra or Elastic Search.
+
 == Next
 
 * xref:astream-quick-start.adoc[Astra Streaming QuickStart]

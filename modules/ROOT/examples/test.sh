@@ -2,12 +2,11 @@
 
 # SET THE BEARER TOKEN FOR ALL OTHER COMMANDS
 
-#export BEARER_TOKEN=AstraCS:cFbZGeOumxfmwqlQiDGRspUz:4d9175e2623e5017792b6c396ba2b3b48a46b5519cc8c1a5a92af3791e5f23f9
-BEARER_TOKEN=AstraCS:cFbZGeOumxfmwqlQiDGRspUz:4d9175e2623e5017792b6c396ba2b3b48a46b5519cc8c1a5a92af3791e5f23f9
+BEARER_TOKEN=<replace_me>
 
 
 # SET VARIABLES
-base_url=https://api.dev.streaming.datastax.com
+base_url=https://api.astra.datastax.com
 base_api=/v2/streaming
 tenant_name=llp-llp-testcreater
 tenant_name_with_topics=test-llp
