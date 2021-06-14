@@ -70,5 +70,5 @@ Features that are not supported in Astra Streaming beta:
 
 == Next
 
-* xref:astream-quick-start* adoc[Astra Streaming QuickStart]
+* xref:astream-quick-start.adoc[Astra Streaming QuickStart]
 * Browse the xref:api.adoc[Astra API References]
