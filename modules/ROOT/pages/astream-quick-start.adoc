@@ -46,9 +46,8 @@ image::astream-create-tenant.png[Create new tenant]
 
 . ... and click *Create Tenant*
 
-Your tenant name must start and end with a lowercase alphabetic character.
-It can only contain lowercase alphabetic characters, and hyphens (kebab-case),
-and *no* numbers.
+Your tenant name must start with a lowercase alphabetic character.
+It can only contain lowercase alphabetic characters, numbers, and hyphens (kebab-case).
 
 Currently, only one region is available for each provider.
 During the beta period, the billing plan is free.
@@ -71,9 +70,8 @@ image::astream-name-namespace.png[Name the new namespace]
 
 . ... and click *Save*.
 
-Your namespace name must start and end with a lowercase alphabetic character.
-It can only contain lowercase alphabetic characters, and hyphens (kebab-case),
-and *no* numbers.
+Your namespace name must start with a lowercase alphabetic character.
+It can only contain lowercase alphabetic characters, numbers, and hyphens (kebab-case).
 
 [#create-a-topic]
 == Create an Astra Streaming topic
