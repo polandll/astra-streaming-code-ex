@@ -2,10 +2,10 @@
 
 Currently, two sinks are available for Astra Streaming:
 
-* xref:astream-quick-start.adoc#create-a-sink[elasticsearch]
-* xref:astream-quick-start.adoc#create-a-sink[cassandra-enhanced]
+* xref:astream-quick-start.adoc#create-a-sink[ElasticSearch]
+* xref:astream-quick-start.adoc#create-a-sink[Astra DB]
 
 The ElasticSearch sink pulls messages from Pulsar topics and persists the
 messages to indexes.
-The Cassandra-enhanced sink pulls messages from Pulsar topics and inserts the data
-in the Astra enhanced Cassandra database.
+The Astra DB sink pulls messages from Pulsar topics and inserts the data
+in an Astra DB table.

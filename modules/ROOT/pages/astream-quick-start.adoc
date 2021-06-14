@@ -626,7 +626,7 @@ You can track the following statistics on this tab:
 [#create-a-sink]
 == Create an Astra Streaming sink
 
-To create an external Cassandra-enhanced sink for Astra Streaming topics:
+To create an Astra DB or external ElasticSearch sink for Astra Streaming topics:
 
 . Click the *Sinks* tab...
 +
@@ -638,10 +638,10 @@ image::astream-new-sink.png[New sink]
 +
 image::astream-name-sink1.png[Name the new sink]
 
-. ... then if making a Cassandra-enhanced sink, enter the database name,
+. ... then if making an Astra DB sink, enter the database name,
 keyspace name, table name, client ID, client secret, and the mapping for the sink:
 +
-image::astream-name-sink2-ce.png[Add configuration details for the new CE sink]
+image::astream-name-sink2-ce.png[Add configuration details for the new Astra DB sink]
 
 . ... or if making an ElasticSearch sink, enter the URL, index name, username,
 and password for the sink:
