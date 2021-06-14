@@ -1,11 +1,21 @@
-= Golang code examples
+= Astra Streaming code examples
 
-[sidebar]
-Astra Streaming is currently in private beta. xref:astream-quick-start.adoc#join-waitlist[Join the Astra Streaming Waitlist].
+Astra Streaming is powered by http://pulsar.apache.org/[Apache Pulsar].
+To connect to your service, use the open-source client APIs provided by the Apache Pulsar project.
 
-Astra Streaming is powered by http://pulsar.apache.org/[Apache Pulsar]. To connect to your service, use the open-source client APIs provided by the Apache Pulsar project.
+Astra Streaming is running Pulsar version 2.6.3. You should use this API version or higher.
 
-The Golang client APIs are distributed through https://pkg.go.dev/[Golang Package Dependency]. On Linux and MacOS, the Golang version 1.12 and above are supported. You can find the documentation for the Golang client https://github.com/apache/pulsar-client-go[here].
+**Choose the language that you would like to use:**
+|===
+| xref:astream-code-examples.adoc[image:java-icon.png[]] | xref:astream-python-eg.adoc[image:python-icon.png[]]|  xref:astream-golang-eg.adoc[image:golang-icon.png[]] | xref:astream-nodejs-eg.adoc[image:node-icon.png[]]
+| xref:astream-code-examples.adoc[Java] | xref:astream-python-eg.adoc[Python] | xref:astream-golang-eg.adoc[Golang] | xref:astream-nodejs-eg.adoc[Node.js]
+|===
+
+== Golang
+
+The Golang client APIs are distributed through https://pkg.go.dev/[Golang Package Dependency].
+On Linux and MacOS, the Golang version 1.12 and above are supported.
+You can find the documentation for the Golang client https://github.com/apache/pulsar-client-go[here].
 
 In the code examples, you'll need to make the following substitutions:
 
@@ -139,7 +149,7 @@ import (
 
 func main() {
     fmt.Println("Pulsar Consumer")
-                
+
     // Configuration variables pertaining to this consumer
     tokenStr := "<streaming-token>"
     uri := "pulsar+ssl://uswest2.aws.kafkaesque.io:6651"
@@ -273,6 +283,5 @@ func main() {
 
 == Next
 
-* xref:astream-quick-start.adoc[Astra Streaming quick start]
+* xref:astream-quick-start.adoc[Astra Streaming QuickStart]
 * Browse the xref:api.adoc[Astra API References]
-
