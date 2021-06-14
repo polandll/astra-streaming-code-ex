@@ -3,7 +3,7 @@
   "scripts": {
     "build:prod": "npm run build:devopsapi && npm run build:publish",
     "build:dev": "npm run build:devopsapi && npm run build:local",
-    "build:publish": "antora --fetch --clean site-publish.yaml",
+    "build:publish": "antora --fetch --generator antora-site-generator-lunr --clean site-publish.yaml",
     "build:local": "antora --stacktrace --fetch --clean site-local.yaml",
     "build:devopsapi": "redoc-cli bundle api/DevOpsv2.yaml --output modules/ROOT/attachments/devopsv2.html"
   },
