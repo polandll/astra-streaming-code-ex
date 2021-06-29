@@ -1,1 +1,1 @@
-* xref:index.adoc[DataStax Astra Streaming Code examples]
+* xref:ce-index.adoc[DataStax Astra Streaming Code examples]
