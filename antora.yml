@@ -1,5 +1,5 @@
 name: docs
-title: DataStax Astra Streaming Documentation
+title: DataStax Astra Streaming Documentation Code Examples
 version: master
 display_version: 'Latest'
 asciidoc:
