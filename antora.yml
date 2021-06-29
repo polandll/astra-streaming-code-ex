@@ -1,4 +1,4 @@
-name: docs
+name: code_docs
 title: DataStax Astra Streaming Documentation Code Examples
 version: master
 display_version: 'Latest'
@@ -13,4 +13,4 @@ asciidoc:
     topic_name: 'blah'
     cluster_name: 'astradev-aws'
 nav:
-- modules/ROOT/nav.adoc
+- modules/CODE_EX/nav.adoc

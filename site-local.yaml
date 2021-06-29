@@ -1,9 +1,9 @@
 site:
-  title: DataStax Astra Streaming Documentation
-  url: /astra-streaming-docs
+  title: DataStax Astra Streaming Code Ex
+  url: /astra-streaming-code-ex
 
 content:
-  edit_url: 'https://github.com/riptano/astra-streaming-docs/blob/main/{path}'
+  edit_url: 'https://github.com/polandll/astra-streaming-code-ex'
   sources:
   - url: .
     branches: HEAD

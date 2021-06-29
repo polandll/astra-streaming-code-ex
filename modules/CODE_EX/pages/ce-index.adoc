@@ -1,0 +1,11 @@
+= Astra Streaming Code examples
+:slug: as-code-examples
+
+* xref:example$check_tenant_exists.sh[]
+* xref:example$create_tenant.sh[]
+* xref:example$get_tenants.sh[]
+* xref:example$get_tenant_limits.sh[]
+* xref:example$get_clusters.sh[]
+* xref:example$get_providers.sh[]
+* xref:example$delete_tenant_hard.sh[]
+* xref:example$delete_tenant_soft.sh[]
